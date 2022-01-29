@@ -9,3 +9,12 @@ body {
 * {
     scrollbar-width: none;
 }
+
+.finisher-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #animated_logo {
+        width: 200px;
+    }
+}
