@@ -3,6 +3,7 @@ $orange: #EA5B0C;
 $white: #FFF;
 $gray: rgb(202, 202, 202);
 $gradient: linear-gradient(90deg, rgba(228,49,38,1) 0%, rgba(234,91,12,1) 100%);
+$transition: all .5s;
 
 body {
   overflow-x: hidden;
@@ -81,6 +82,8 @@ header {
     z-index: -1;
   }
   nav {
+    background-color: transparent;
+    transition: $transition;
     .navbar-brand {
       color: $white;
     }
@@ -88,6 +91,7 @@ header {
       .nav-item {
         a {
           color: $white;
+          transition: $transition;
           &:hover {
             color: $gray;
           }
@@ -95,6 +99,21 @@ header {
       }
     }
   }
+
+  nav.navbar-scrolled {
+    background-color: $white;
+    .navbar-nav {
+      .nav-item {
+        a {
+          color: black;
+          &:hover {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+
   #animated_logo {
     max-width: 200px;
     filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.164));
@@ -108,5 +127,6 @@ header {
 section {
   .container {
     padding: 2rem 0;
+    min-height: 100vh;
   }
 }

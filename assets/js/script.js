@@ -1,6 +1,15 @@
 // aos animate
 AOS.init();
 
+// Change menu background on scrolling
+$(document).scroll(function() {
+  if ($(document).scrollTop() > 100) {
+      $("nav").addClass("navbar-scrolled");
+  } else {
+      $("nav").removeClass("navbar-scrolled");
+  }
+});
+
 // parallax animation
 var lFollowX = 0,
     lFollowY = 0,

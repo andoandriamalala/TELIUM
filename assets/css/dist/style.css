@@ -70,13 +70,27 @@ header .header_background {
   position: absolute;
   z-index: -1;
 }
+header nav {
+  background-color: transparent;
+  transition: all 0.5s;
+}
 header nav .navbar-brand {
   color: #FFF;
 }
 header nav .navbar-nav .nav-item a {
   color: #FFF;
+  transition: all 0.5s;
 }
 header nav .navbar-nav .nav-item a:hover {
+  color: #cacaca;
+}
+header nav.navbar-scrolled {
+  background-color: #FFF;
+}
+header nav.navbar-scrolled .navbar-nav .nav-item a {
+  color: black;
+}
+header nav.navbar-scrolled .navbar-nav .nav-item a:hover {
   color: #cacaca;
 }
 header #animated_logo {
@@ -89,4 +103,5 @@ header h1 {
 
 section .container {
   padding: 2rem 0;
+  min-height: 100vh;
 }
