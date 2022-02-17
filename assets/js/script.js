@@ -1,5 +1,5 @@
 // aos animate
-AOS.init();
+// AOS.init();
 
 // Change menu background on scrolling
 $(document).scroll(function() {
