@@ -1,6 +1,8 @@
 "use strict";
 
-// parallax animation
+// aos animate
+AOS.init(); // parallax animation
+
 var lFollowX = 0,
     lFollowY = 0,
     x = 0,

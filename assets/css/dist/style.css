@@ -81,6 +81,10 @@ header nav .navbar-nav .nav-item a:hover {
 }
 header #animated_logo {
   max-width: 200px;
+  filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.164));
+}
+header h1 {
+  color: #FFF;
 }
 
 section .container {
