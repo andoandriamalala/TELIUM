@@ -1,6 +1,20 @@
+@font-face {
+  font-family: 'poppinssemibold';
+  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'interregular';
+  src: url("../fonts/inter-regular-webfont.woff2") format("woff2"), url("../fonts/inter-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   overflow-x: hidden;
-  font-family: monospace;
+  font-family: "interregular";
 }
 
 img {
@@ -106,10 +120,17 @@ header nav .navbar-nav .nav-item a:hover {
   color: #cacaca;
 }
 
+header nav .navbar-nav .nav-item .nav-link {
+  padding: 1.2rem 1rem;
+}
+
 header nav .btn {
   font-size: .8rem;
   color: #FFF;
   border: 2px solid #FFF;
+  top: 50%;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
 }
 
 header nav .btn:hover {
@@ -120,8 +141,12 @@ header nav .logo {
   max-width: 100px;
 }
 
+header nav .logo_dark {
+  display: none;
+}
+
 header nav.navbar-scrolled {
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.897);
 }
 
 header nav.navbar-scrolled .navbar-nav .nav-item a {
@@ -130,6 +155,24 @@ header nav.navbar-scrolled .navbar-nav .nav-item a {
 
 header nav.navbar-scrolled .navbar-nav .nav-item a:hover {
   color: #cacaca;
+}
+
+header nav.navbar-scrolled .btn {
+  font-size: .8rem;
+  color: #1c82bd;
+  border: 2px solid #1c82bd;
+}
+
+header nav.navbar-scrolled .btn:hover {
+  color: #1c82bd;
+}
+
+header nav.navbar-scrolled .logo_light {
+  display: none;
+}
+
+header nav.navbar-scrolled .logo_dark {
+  display: block;
 }
 
 header #animated_logo {

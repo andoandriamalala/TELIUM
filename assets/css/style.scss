@@ -1,13 +1,33 @@
 $red: #E43126;
 $orange: #EA5B0C;
 $white: #FFF;
+$blue: rgb(28, 130, 189);
 $gray: rgb(202, 202, 202);
 $gradient: linear-gradient(90deg, rgba(234,98,22,1) 0%, rgba(247,193,0,1) 100%);
 $transition: all .5s;
+$poppins: 'poppinssemibold';
+$inter: 'interregular';
+
+@font-face {
+  font-family: 'poppinssemibold';
+  src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'interregular';
+  src: url('../fonts/inter-regular-webfont.woff2') format('woff2'),
+       url('../fonts/inter-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
   overflow-x: hidden;
-  font-family: monospace;
+  font-family: $inter;
 }
 
 img {
@@ -101,6 +121,9 @@ header {
             color: $gray;
           }
         }
+        .nav-link {
+          padding: 1.2rem 1rem;
+        }
       }
     }
     .btn {
@@ -108,6 +131,8 @@ header {
       font-size: .8rem;
       color: $white;
       border: 2px solid $white;
+      top: 50%;
+      transform: translateY(25%);
       &:hover {
         color: $white;
       }
@@ -115,10 +140,13 @@ header {
     .logo {
       max-width: 100px;
     }
+    .logo_dark {
+      display: none;
+    }
   }
 
   nav.navbar-scrolled {
-    background-color: $white;
+    background-color: rgba(255, 255, 255, 0.897);
     .navbar-nav {
       .nav-item {
         a {
@@ -128,6 +156,21 @@ header {
           }
         }
       }
+    }
+    .btn {
+      // background: $gradient;
+      font-size: .8rem;
+      color: $blue;
+      border: 2px solid $blue;
+      &:hover {
+        color: $blue;
+      }
+    }
+    .logo_light {
+      display: none;
+    }
+    .logo_dark {
+      display: block;
     }
   }
 
