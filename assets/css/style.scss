@@ -1,5 +1,6 @@
 $red: #E43126;
-$orange: #EA5B0C;
+$orange: #ea6216;
+$yellow: #f7c100;
 $white: #FFF;
 $blue: rgb(28, 130, 189);
 $gray: rgb(202, 202, 202);
@@ -56,7 +57,7 @@ img {
   height: 80px;
   border-radius: 50%;
   position: absolute;
-  z-index: 900;
+  z-index: 2000;
   top: -40px;
   left: -40px;
   pointer-events: none; 
@@ -105,74 +106,6 @@ header {
     position: absolute;
     z-index: -1;
   }
-  nav {
-    background-color: transparent;
-    transition: $transition;
-    font-size: .8rem;
-    .navbar-brand {
-      color: $white;
-    }
-    .navbar-nav {
-      .nav-item {
-        a {
-          color: $white;
-          transition: $transition;
-          &:hover {
-            color: $gray;
-          }
-        }
-        .nav-link {
-          padding: 1.2rem 1rem;
-        }
-      }
-    }
-    .btn {
-      // background: $gradient;
-      font-size: .8rem;
-      color: $white;
-      border: 2px solid $white;
-      top: 50%;
-      transform: translateY(25%);
-      &:hover {
-        color: $white;
-      }
-    }
-    .logo {
-      max-width: 100px;
-    }
-    .logo_dark {
-      display: none;
-    }
-  }
-
-  nav.navbar-scrolled {
-    background-color: rgba(255, 255, 255, 0.897);
-    .navbar-nav {
-      .nav-item {
-        a {
-          color: black;
-          &:hover {
-            color: $gray;
-          }
-        }
-      }
-    }
-    .btn {
-      // background: $gradient;
-      font-size: .8rem;
-      color: $blue;
-      border: 2px solid $blue;
-      &:hover {
-        color: $blue;
-      }
-    }
-    .logo_light {
-      display: none;
-    }
-    .logo_dark {
-      display: block;
-    }
-  }
 
   #animated_logo {
     max-width: 200px;
@@ -180,6 +113,74 @@ header {
   }
   h1 {
     color: $white;
+  }
+}
+
+
+nav {
+  background-color: transparent;
+  transition: $transition;
+  font-size: .8rem;
+  .navbar-brand {
+    color: $white;
+  }
+  .navbar-nav {
+    .nav-item {
+      a {
+        color: $white;
+        transition: $transition;
+        &:hover {
+          color: $gray;
+        }
+      }
+      .nav-link {
+        padding: 1.2rem 1rem;
+      }
+    }
+  }
+  .btn {
+    // background: $gradient;
+    font-size: .8rem;
+    color: $white;
+    border: 2px solid $white;
+    &:hover {
+      color: $white;
+    }
+  }
+  .logo {
+    max-width: 100px;
+  }
+  .logo_dark {
+    display: none;
+  }
+}
+
+nav.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.897);
+  .navbar-nav {
+    .nav-item {
+      a {
+        color: black;
+        &:hover {
+          color: $gray;
+        }
+      }
+    }
+  }
+  .btn {
+    // background: $gradient;
+    font-size: .8rem;
+    color: $blue;
+    border: 2px solid $blue;
+    &:hover {
+      color: $blue;
+    }
+  }
+  .logo_light {
+    display: none;
+  }
+  .logo_dark {
+    display: block;
   }
 }
 

@@ -42,7 +42,7 @@ img {
   height: 80px;
   border-radius: 50%;
   position: absolute;
-  z-index: 900;
+  z-index: 2000;
   top: -40px;
   left: -40px;
   pointer-events: none;
@@ -99,82 +99,6 @@ header .header_background {
   z-index: -1;
 }
 
-header nav {
-  background-color: transparent;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  font-size: .8rem;
-}
-
-header nav .navbar-brand {
-  color: #FFF;
-}
-
-header nav .navbar-nav .nav-item a {
-  color: #FFF;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-header nav .navbar-nav .nav-item a:hover {
-  color: #cacaca;
-}
-
-header nav .navbar-nav .nav-item .nav-link {
-  padding: 1.2rem 1rem;
-}
-
-header nav .btn {
-  font-size: .8rem;
-  color: #FFF;
-  border: 2px solid #FFF;
-  top: 50%;
-  -webkit-transform: translateY(25%);
-          transform: translateY(25%);
-}
-
-header nav .btn:hover {
-  color: #FFF;
-}
-
-header nav .logo {
-  max-width: 100px;
-}
-
-header nav .logo_dark {
-  display: none;
-}
-
-header nav.navbar-scrolled {
-  background-color: rgba(255, 255, 255, 0.897);
-}
-
-header nav.navbar-scrolled .navbar-nav .nav-item a {
-  color: black;
-}
-
-header nav.navbar-scrolled .navbar-nav .nav-item a:hover {
-  color: #cacaca;
-}
-
-header nav.navbar-scrolled .btn {
-  font-size: .8rem;
-  color: #1c82bd;
-  border: 2px solid #1c82bd;
-}
-
-header nav.navbar-scrolled .btn:hover {
-  color: #1c82bd;
-}
-
-header nav.navbar-scrolled .logo_light {
-  display: none;
-}
-
-header nav.navbar-scrolled .logo_dark {
-  display: block;
-}
-
 header #animated_logo {
   max-width: 200px;
   -webkit-filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.164));
@@ -183,6 +107,79 @@ header #animated_logo {
 
 header h1 {
   color: #FFF;
+}
+
+nav {
+  background-color: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: .8rem;
+}
+
+nav .navbar-brand {
+  color: #FFF;
+}
+
+nav .navbar-nav .nav-item a {
+  color: #FFF;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav .navbar-nav .nav-item a:hover {
+  color: #cacaca;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+  padding: 1.2rem 1rem;
+}
+
+nav .btn {
+  font-size: .8rem;
+  color: #FFF;
+  border: 2px solid #FFF;
+}
+
+nav .btn:hover {
+  color: #FFF;
+}
+
+nav .logo {
+  max-width: 100px;
+}
+
+nav .logo_dark {
+  display: none;
+}
+
+nav.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.897);
+}
+
+nav.navbar-scrolled .navbar-nav .nav-item a {
+  color: black;
+}
+
+nav.navbar-scrolled .navbar-nav .nav-item a:hover {
+  color: #cacaca;
+}
+
+nav.navbar-scrolled .btn {
+  font-size: .8rem;
+  color: #1c82bd;
+  border: 2px solid #1c82bd;
+}
+
+nav.navbar-scrolled .btn:hover {
+  color: #1c82bd;
+}
+
+nav.navbar-scrolled .logo_light {
+  display: none;
+}
+
+nav.navbar-scrolled .logo_dark {
+  display: block;
 }
 
 section .container {

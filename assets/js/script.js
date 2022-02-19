@@ -38,7 +38,6 @@ function moveImg() {
   
   translate = 'translate(' + (x * -1)  + 'px, ' + (y * -1) + 'px)';
 
-  console.log(translate)
 
   $('#animated_logo').css({
     '-webit-transform': translate,
@@ -69,13 +68,13 @@ const math = {
   },
   norm: (value, min, max) => {
     return (value - min) / (max - min);
-  } };
-
+  }
+};
 
 const config = {
   height: window.innerHeight,
-  width: window.innerWidth };
-
+  width: window.innerWidth
+};
 
 class Smooth {
   constructor() {
@@ -85,13 +84,13 @@ class Smooth {
       ease: 0.1,
       current: 0,
       last: 0,
-      rounded: 0 };
-
+      rounded: 0
+    };
 
     this.dom = {
       el: document.querySelector("[data-scroll]"),
-      content: document.querySelector("[data-scroll-content]") };
-
+      content: document.querySelector("[data-scroll-content]")
+    };
 
     this.rAF = null;
 
@@ -100,8 +99,8 @@ class Smooth {
 
   bindMethods() {
     ["scroll", "run", "resize"].forEach(
-    fn => this[fn] = this[fn].bind(this));
-
+      (fn) => (this[fn] = this[fn].bind(this))
+    );
   }
 
   setStyles() {
@@ -111,13 +110,13 @@ class Smooth {
       left: 0,
       height: "100%",
       width: "100%",
-      overflow: "hidden" });
-
+      overflow: "hidden"
+    });
   }
 
   setHeight() {
     document.body.style.height = `${
-    this.dom.content.getBoundingClientRect().height
+      this.dom.content.getBoundingClientRect().height
     }px`;
   }
 
@@ -127,7 +126,7 @@ class Smooth {
   }
 
   preload() {
-    imagesLoaded(this.dom.content, instance => {
+    imagesLoaded(this.dom.content, (instance) => {
       this.setHeight();
     });
   }
@@ -199,7 +198,7 @@ class Smooth {
   init() {
     this.preload();
     this.on();
-  }}
-
+  }
+}
 
 new Smooth();
