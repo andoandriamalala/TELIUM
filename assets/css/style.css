@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+h1 {
+  font-family: "poppinssemibold";
+}
+
 body {
   overflow-x: hidden;
   font-family: "interregular";
@@ -107,6 +111,21 @@ header #animated_logo {
 
 header h1 {
   color: #FFF;
+}
+
+header .container h1 {
+  max-width: 30rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+header .container h1::after {
+  content: '';
+  height: 4px;
+  width: 5rem;
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#ea6216), to(#f7c100));
+  background: linear-gradient(90deg, #ea6216 0%, #f7c100 100%);
 }
 
 nav {
