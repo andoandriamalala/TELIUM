@@ -23,7 +23,7 @@ function moveBackground() {
   
   translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
-  $('.header_background').css({
+  $('.header_background, .moove_back').css({
     '-webit-transform': translate,
     '-moz-transform': translate,
     'transform': translate
@@ -39,7 +39,7 @@ function moveImg() {
   translate = 'translate(' + (x * -1)  + 'px, ' + (y * -1) + 'px)';
 
 
-  $('#animated_logo').css({
+  $('#animated_logo, .moove_top').css({
     '-webit-transform': translate,
     '-moz-transform': translate,
     'transform': translate
