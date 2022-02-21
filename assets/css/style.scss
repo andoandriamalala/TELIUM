@@ -30,6 +30,16 @@ h1, h2, h3 {
   font-family: $poppins;
 }
 
+h2.title {
+  text-transform: uppercase;
+  color: black;
+}
+
+.section_about {
+  font-style: italic;
+  color: black;
+}
+
 ul.listing {
   padding-left: 0;
   li {
@@ -57,6 +67,7 @@ body {
   overflow-x: hidden;
   font-family: $inter;
   color: $dark_gray;
+  font-size: 12px;
   // overflow-x: hidden;
 }
 
@@ -247,7 +258,7 @@ nav.navbar-scrolled {
   // height: 100%;
   aspect-ratio: 5 / 4;
   img {
-    width: 75%;
+    width: 90%;
   }
   &::before {
     content: url(../img/vague.svg);
@@ -255,7 +266,7 @@ nav.navbar-scrolled {
     z-index: 61;
     width: 20%;
     position: absolute;
-    left: 0;
+    left: -5%;
     bottom: 20%;
   }
   &::after {
@@ -264,8 +275,8 @@ nav.navbar-scrolled {
     aspect-ratio: 1;
     background: $gradient;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -8%;
+    top: -5%;
     z-index: -1;
     border-radius: 50%;
   }

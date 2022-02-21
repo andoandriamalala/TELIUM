@@ -16,6 +16,16 @@ h1, h2, h3 {
   font-family: "poppinssemibold";
 }
 
+h2.title {
+  text-transform: uppercase;
+  color: black;
+}
+
+.section_about {
+  font-style: italic;
+  color: black;
+}
+
 ul.listing {
   padding-left: 0;
 }
@@ -47,6 +57,7 @@ body {
   overflow-x: hidden;
   font-family: "interregular";
   color: #767676;
+  font-size: 12px;
 }
 
 img {
@@ -254,7 +265,7 @@ nav.navbar-scrolled .navbar-toggler {
 }
 
 .app_img img {
-  width: 75%;
+  width: 90%;
 }
 
 .app_img::before {
@@ -263,7 +274,7 @@ nav.navbar-scrolled .navbar-toggler {
   z-index: 61;
   width: 20%;
   position: absolute;
-  left: 0;
+  left: -5%;
   bottom: 20%;
 }
 
@@ -274,8 +285,8 @@ nav.navbar-scrolled .navbar-toggler {
   background: -webkit-gradient(linear, left top, right top, from(#ea6216), to(#f7c100));
   background: linear-gradient(90deg, #ea6216 0%, #f7c100 100%);
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -8%;
+  top: -5%;
   z-index: -1;
   border-radius: 50%;
 }
