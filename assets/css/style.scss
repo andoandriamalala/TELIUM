@@ -9,6 +9,7 @@ $gradient: linear-gradient(90deg, rgba(234,98,22,1) 0%, rgba(247,193,0,1) 100%);
 $transition: all .5s;
 $poppins: 'poppinssemibold';
 $inter: 'interregular';
+$drop_shadow: drop-shadow(-5px 5px 3px #00000012);
 
 @font-face {
   font-family: 'poppinssemibold';
@@ -31,7 +32,12 @@ h1, h2, h3 {
 }
 
 h2.title {
-  text-transform: uppercase;
+  // text-transform: uppercase;
+  color: black;
+}
+
+h3.title {
+  font-size: 1.5rem;
   color: black;
 }
 
@@ -259,6 +265,7 @@ nav.navbar-scrolled {
   aspect-ratio: 5 / 4;
   img {
     width: 90%;
+    filter: $drop_shadow;
   }
   &::before {
     content: url(../img/vague.svg);
