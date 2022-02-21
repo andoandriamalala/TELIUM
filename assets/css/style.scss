@@ -313,6 +313,66 @@ section {
   }
 }
 
+// svg application animation start
+
+#checklist, #web_x5F_link {
+  animation-name: shake;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  transform: translateY(-5px);
+}
+
+#nine {
+  animation-name: shake;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  transform: translateY(-5px);
+}
+
+@keyframes shake{
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  0% {
+    transform: translateY(-5px);
+  }
+}
+
+
+#hand_x5F_cursor {
+  animation-name: diagonal_shake;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  transform: translate(-5px, -5px);
+}
+
+@keyframes shake{
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  0% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes diagonal_shake{
+  0% {
+    transform: translate(-5px, -5px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  0% {
+    transform: translate(-5px, -5px);
+  }
+}
+// svg application animation end
 
 @media (max-width: 991px) {
   nav {
