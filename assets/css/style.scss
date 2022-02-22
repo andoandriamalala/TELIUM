@@ -74,6 +74,7 @@ body {
   font-family: $inter;
   color: $dark_gray;
   font-size: 12px;
+  scroll-behavior: smooth;
   // overflow-x: hidden;
 }
 
@@ -154,7 +155,7 @@ header {
   }
 
   #animated_logo {
-    max-width: 200px;
+    max-width: 300px;
     filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.164));
   }
   h1 {
@@ -262,37 +263,37 @@ nav.navbar-scrolled {
 
 .app_img {
   // height: 100%;
-  aspect-ratio: 5 / 4;
+  // aspect-ratio: 5 / 4;
   img {
     width: 90%;
-    filter: $drop_shadow;
   }
-  &::before {
-    content: url(../img/vague.svg);
-    display: block;
-    z-index: 61;
-    width: 20%;
-    position: absolute;
-    left: -5%;
-    bottom: 20%;
-  }
-  &::after {
-    content: '';
-    width: 30%;
-    aspect-ratio: 1;
-    background: $gradient;
-    position: absolute;
-    right: -8%;
-    top: -5%;
-    z-index: -1;
-    border-radius: 50%;
-  }
+  // &::before {
+  //   content: url(../img/vague.svg);
+  //   display: block;
+  //   z-index: 61;
+  //   width: 20%;
+  //   position: absolute;
+  //   left: -5%;
+  //   bottom: 20%;
+  // }
+  // &::after {
+  //   content: '';
+  //   width: 30%;
+  //   aspect-ratio: 1;
+  //   background: $gradient;
+  //   position: absolute;
+  //   right: -8%;
+  //   top: -5%;
+  //   z-index: -1;
+  //   border-radius: 50%;
+  // }
 }
 
 .shake_it {
   animation: shake ease-in-out;
   animation-duration: 3000ms;
   animation-iteration-count: infinite;
+  transform: translateY(-5px);
 }
 
 @keyframes shake {
