@@ -76,7 +76,7 @@
     </nav>
     <div class="scroll" data-scroll-content>
       <header class="position-relative">
-        <img id="animated_logo" src="assets/img/logo_light.svg" alt="Logo">
+        <img id="animated_logo" src="assets/img/logo_banner.svg" alt="Logo">
 
         <div class="header_background"></div>
         <div class="container position-absolute bottom-0 mb-5 px-md-4">
@@ -7502,9 +7502,15 @@
             <div class="splide">
               <div class="splide__track">
                 <ul class="splide__list">
-                  <li class="splide__slide">Slide 01</li>
-                  <li class="splide__slide">Slide 02</li>
-                  <li class="splide__slide">Slide 03</li>
+                  <li class="splide__slide">
+                    <img src="assets/img/angular.png" alt="angular">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="assets/img/symfony.webp" alt="symfony">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="assets/img/mysql.webp" alt="mysql">
+                  </li>
                 </ul>
               </div>
             </div>
@@ -7534,6 +7540,11 @@
     var splide = new Splide( '.splide' );
     splide.mount();
   } );
+
+  // new Splide( '.splide', {
+  //   type: 'loop',
+  //   perPage: 3,
+  // });
 </script>
 
 <script src="assets/js/splide.min.js"></script>
