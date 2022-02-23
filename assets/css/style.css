@@ -444,4 +444,8 @@ section .container {
     color: #FFF;
   }
 }
+
+#services i {
+  font-size: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
