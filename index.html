@@ -7497,11 +7497,29 @@
             </div>
           </div>
 
-          <div>
 
-            <div class="splide">
+
+            <div id="image-slider" class="splide mx-auto">
               <div class="splide__track">
                 <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="assets/img/angular.png" alt="angular">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="assets/img/symfony.webp" alt="symfony">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="assets/img/mysql.webp" alt="mysql">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="assets/img/angular.png" alt="angular">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="assets/img/symfony.webp" alt="symfony">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="assets/img/mysql.webp" alt="mysql">
+                  </li>
                   <li class="splide__slide">
                     <img src="assets/img/angular.png" alt="angular">
                   </li>
@@ -7514,7 +7532,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+
             
             
           </div>
@@ -7535,19 +7553,26 @@
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-<script>
-  document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide' );
-    splide.mount();
-  } );
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '#image-slider', {
+        perPage    : 5,
+        type: "loop",
+        autoplay : true,
+        interval: 5000,
+        width: 500,
+        gap: 50,
+        arrows: false,
+        breakpoints: {
+          640: {
+            perPage: 4,
+          },
+        },
+      } ).mount();
+    } );
+  </script>
 
-  // new Splide( '.splide', {
-  //   type: 'loop',
-  //   perPage: 3,
-  // });
-</script>
-
-<script src="assets/js/splide.min.js"></script>
+  <script src="assets/js/splide.min.js"></script>
 
   <script src="assets/js/jquery.js"></script>
   <!-- <script src="assets/js/mouse.js"></script> -->
