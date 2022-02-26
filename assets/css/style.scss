@@ -167,14 +167,14 @@ header {
     h1 {
       max-width: 30rem;
       font-size: 1.5rem;
-      position: relative;
-      &::after {
-        content: '';
-        height: 4px;
-        width: 5rem;
-        display: block;
-        background: $gradient;
-      }
+      // position: relative;
+      // &::after {
+      //   content: '';
+      //   height: 4px;
+      //   width: 5rem;
+      //   display: block;
+      //   background: $gradient;
+      // }
     }
   }
 }
@@ -500,4 +500,38 @@ section {
 
 .splide__pagination__page.is-active {
   background: $orange;
+}
+
+
+h1#text {
+  overflow: hidden;
+  margin: 0 auto;
+  display: inline-block;
+  font-weight: normal;
+  &::after  {
+    content: '';
+    display: inline-block;
+    background-color: white;
+    margin-left: 2px;
+    height: 4px;
+    width: 15px;
+    animation: cursor 0.4s infinite;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor {
+  0% { opacity: 1; }
+  49% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.competence_content {
+  p {
+    margin: 0 0 0 10px;
+  }
+  div {
+    align-items: center;
+  }
 }

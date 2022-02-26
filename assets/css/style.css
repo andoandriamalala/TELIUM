@@ -161,16 +161,6 @@ header h1 {
 header .container h1 {
   max-width: 30rem;
   font-size: 1.5rem;
-  position: relative;
-}
-
-header .container h1::after {
-  content: '';
-  height: 4px;
-  width: 5rem;
-  display: block;
-  background: -webkit-gradient(linear, left top, right top, from(#ea6216), to(#f7c100));
-  background: linear-gradient(90deg, #ea6216 0%, #f7c100 100%);
 }
 
 nav {
@@ -516,5 +506,63 @@ section .container {
 
 .splide__pagination__page.is-active {
   background: #ea6216;
+}
+
+h1#text {
+  overflow: hidden;
+  margin: 0 auto;
+  display: inline-block;
+  font-weight: normal;
+}
+
+h1#text::after {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  margin-left: 2px;
+  height: 4px;
+  width: 15px;
+  -webkit-animation: cursor 0.4s infinite;
+          animation: cursor 0.4s infinite;
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.competence_content p {
+  margin: 0 0 0 10px;
+}
+
+.competence_content div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
