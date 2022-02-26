@@ -436,10 +436,14 @@ section {
 
 
 #image-slider {
-  .splide__slide img {
-    width: 100%;
-    height: auto;
-  }
+    .splide__slide {
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+        height: auto;
+    }
+  } 
 
   .splide__pagination {
     bottom: -2em;
