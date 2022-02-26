@@ -459,11 +459,37 @@ section .container {
   bottom: -2em;
 }
 
-#valeurs .splide__slide h3 {
+#valeurs .splide__track {
+  position: relative;
+}
+
+#valeurs .splide__track::before {
+  content: url(../img/quote.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 3rem;
+  opacity: .06;
+}
+
+#valeurs .splide__track::after {
+  content: url(../img/quote.svg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 3rem;
+  opacity: .06;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#valeurs .splide__track .splide__slide h3 {
   text-align: center;
 }
 
-#valeurs .splide__slide p {
+#valeurs .splide__track .splide__slide p {
   font-family: 'Dancing Script', cursive;
   font-size: 1.6rem;
   text-align: center;
@@ -471,8 +497,24 @@ section .container {
   margin-bottom: .8rem;
 }
 
-#valeurs .splide__slide span {
+#valeurs .splide__track .splide__slide span {
   display: block;
   text-align: center;
+}
+
+#valeurs .splide__arrows .splide__arrow--prev {
+  left: -3em !important;
+}
+
+#valeurs .splide__arrows .splide__arrow--next {
+  right: -3em !important;
+}
+
+#valeurs .splide__pagination {
+  bottom: -1.5em;
+}
+
+.splide__pagination__page.is-active {
+  background: #ea6216;
 }
 /*# sourceMappingURL=style.css.map */
