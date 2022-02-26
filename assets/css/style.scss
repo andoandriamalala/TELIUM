@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 $red: #E43126;
 $orange: #ea6216;
 $yellow: #f7c100;
@@ -441,5 +443,24 @@ section {
 
   .splide__pagination {
     bottom: -2em;
+  }
+}
+
+#valeurs {
+  .splide__slide {
+    h3 {
+      text-align: center;
+    }
+    p {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.6rem;
+      text-align: center;
+      line-height: 30px;
+      margin-bottom: .8rem;
+    }
+    span {
+      display: block;
+      text-align: center;
+    }
   }
 }

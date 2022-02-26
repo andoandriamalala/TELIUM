@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @font-face {
   font-family: 'poppinssemibold';
   src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff");
@@ -456,5 +457,22 @@ section .container {
 
 #image-slider .splide__pagination {
   bottom: -2em;
+}
+
+#valeurs .splide__slide h3 {
+  text-align: center;
+}
+
+#valeurs .splide__slide p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: .8rem;
+}
+
+#valeurs .splide__slide span {
+  display: block;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

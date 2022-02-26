@@ -7548,6 +7548,33 @@
           </div>
         </div>
       </section>
+
+      <section id="valeurs">
+        <div class="container py-5">
+          <div class="row justify-content-center m-0 gx-md-5">
+            <div class="col-md-8 text-center my-5">
+              <h2 class="title">Nos valeurs</h2>
+            </div>
+          </div>
+
+            <div id="valeur-slider" class="splide mx-auto">
+              <div class="splide__track">
+                <ul class="splide__list">
+
+                  <li class="splide__slide">
+                    <h3>Respect</h3>
+                    <p>Le respect mutuel est le fondement de la véritable harmonie.</p>
+                    <span>DALAI LAMA</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </div>
 
   </div>
@@ -7578,6 +7605,16 @@
             perPage: 4,
           },
         },
+      } ).mount();
+
+      new Splide( '#valeur-slider', {
+        perPage    : 1,
+        type: "loop",
+        autoplay : true,
+        interval: 5000,
+        width: 500,
+        gap: 50,
+        // arrows: false,
       } ).mount();
     } );
   </script>
