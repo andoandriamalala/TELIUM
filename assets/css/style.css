@@ -13,22 +13,22 @@
   font-style: normal;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "poppinssemibold";
 }
 
 h2.title {
-  color: black;
+  color: #000;
 }
 
 h3.title {
   font-size: 1.5rem;
-  color: black;
+  color: #000;
 }
 
 .section_about {
   font-style: italic;
-  color: black;
+  color: #000;
 }
 
 ul.listing {
@@ -215,7 +215,7 @@ nav.navbar-scrolled {
 }
 
 nav.navbar-scrolled .navbar-nav .nav-item a {
-  color: black;
+  color: #000;
 }
 
 nav.navbar-scrolled .navbar-nav .nav-item a:hover {
@@ -241,7 +241,7 @@ nav.navbar-scrolled .logo_dark {
 }
 
 nav.navbar-scrolled .navbar-toggler {
-  color: black;
+  color: #000;
 }
 
 .navbar-toggler {
@@ -573,5 +573,34 @@ h1#text::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.logo_footer {
+  max-width: 150px;
+}
+
+.footer {
+  background-color: #f9f9f9;
+}
+
+.footer .container {
+  max-width: 640px;
+}
+
+.footer .container h4 {
+  color: #000;
+}
+
+.footer .container ul {
+  padding: 0;
+}
+
+.footer .container ul li {
+  list-style: none;
+}
+
+.footer .container ul li a {
+  color: #767676;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

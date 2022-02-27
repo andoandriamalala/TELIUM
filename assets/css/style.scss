@@ -6,6 +6,8 @@ $yellow: #f7c100;
 $white: #FFF;
 $blue: #26c3a0;
 $gray: #cacaca;
+$gray_light: #f9f9f9;
+$black: #000;
 $dark_gray: #767676;
 $gradient: linear-gradient(90deg, rgba(234,98,22,1) 0%, rgba(247,193,0,1) 100%);
 $transition: all .5s;
@@ -29,23 +31,23 @@ $drop_shadow: drop-shadow(-5px 5px 3px #00000012);
   font-style: normal;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: $poppins;
 }
 
 h2.title {
   // text-transform: uppercase;
-  color: black;
+  color: $black;
 }
 
 h3.title {
   font-size: 1.5rem;
-  color: black;
+  color: $black;
 }
 
 .section_about {
   font-style: italic;
-  color: black;
+  color: $black;
 }
 
 ul.listing {
@@ -226,7 +228,7 @@ nav.navbar-scrolled {
   .navbar-nav {
     .nav-item {
       a {
-        color: black;
+        color: $black;
         &:hover {
           color: $gray;
         }
@@ -249,7 +251,7 @@ nav.navbar-scrolled {
     display: block;
   }
   .navbar-toggler {
-    color: black;
+    color: $black;
   }
 }
 
@@ -537,5 +539,29 @@ h1#text {
   }
   div {
     align-items: center;
+  }
+}
+
+.logo_footer {
+  max-width: 150px;
+}
+
+.footer {
+  background-color: $gray_light;
+  .container {
+    max-width: 640px;
+    h4 {
+      color: $black;
+    }
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          color: $dark_gray;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
