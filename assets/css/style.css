@@ -62,7 +62,7 @@ body {
   overflow-x: hidden;
   font-family: "interregular";
   color: #767676;
-  font-size: 12px;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -489,11 +489,12 @@ section .container {
 }
 
 #valeurs .splide__track .splide__slide p {
-  font-family: 'Dancing Script', cursive;
   font-size: 1.6rem;
   text-align: center;
   line-height: 30px;
   margin-bottom: .8rem;
+  font-style: italic;
+  font-weight: 100;
 }
 
 #valeurs .splide__track .splide__slide span {
@@ -584,7 +585,7 @@ h1#text::after {
 }
 
 .footer .container {
-  max-width: 640px;
+  max-width: 800px;
 }
 
 .footer .container h4 {
@@ -602,5 +603,47 @@ h1#text::after {
 .footer .container ul li a {
   color: #767676;
   text-decoration: none;
+}
+
+.cta {
+  background-color: #26c3a0;
+}
+
+.cta .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+}
+
+.cta .container p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+.cta .container .btn {
+  font-size: 1.5rem;
+  color: #FFF;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#ea6216), to(#f7c100));
+  background: linear-gradient(90deg, #ea6216 0%, #f7c100 100%);
+}
+
+.cta .container .btn:hover {
+  color: #FFF;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#services {
+  background-color: #f9f9f9;
 }
 /*# sourceMappingURL=style.css.map */
