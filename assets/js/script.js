@@ -211,7 +211,7 @@ var i = 0;
 		var html = document.getElementById("text").innerHTML;
 		var attr = tag.setAttribute("data", html);
 		var txt = tag.getAttribute("data");
-		var speed = 200;
+		var speed = 50;
 
 		function typeWriter() {
 		  if (i <= txt.length) {

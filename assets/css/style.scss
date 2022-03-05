@@ -46,7 +46,7 @@ h3.title {
 }
 
 .section_about {
-  font-style: italic;
+  // font-style: italic;
   color: $black;
 }
 
@@ -166,17 +166,17 @@ header {
     color: $white;
   }
   .container {
+    &::after {
+      content: '';
+      height: 4px;
+      width: 5rem;
+      display: block;
+      background: $gradient;
+    }
     h1 {
       max-width: 30rem;
-      font-size: 1.5rem;
-      // position: relative;
-      // &::after {
-      //   content: '';
-      //   height: 4px;
-      //   width: 5rem;
-      //   display: block;
-      //   background: $gradient;
-      // }
+      font-size: 1.2rem;
+      position: relative;
     }
   }
 }
@@ -552,6 +552,7 @@ h1#text {
   background-color: $gray_light;
   .container {
     max-width: 800px;
+    font-size: .8rem;
     h4 {
       color: $black;
     }
@@ -569,7 +570,7 @@ h1#text {
 }
 
 .cta {
-  background-color: $blue;
+  background-color: $gray_light;
   .container {
     display: flex;
     justify-content: center;
@@ -577,11 +578,11 @@ h1#text {
     column-gap: 3rem;
     p {
       margin: 0;
-      font-size: 1.5rem;
-      color: $white;
+      font-size: 1.2rem;
+      color: $orange;
     }
     .btn {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: $white;
       border: none;
       background: $gradient;
@@ -595,4 +596,20 @@ h1#text {
 
 #services {
   background-color: $gray_light;
+}
+
+.banner {
+  height: 30vh;
+  min-height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
