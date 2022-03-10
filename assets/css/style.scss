@@ -597,12 +597,14 @@ h1#text {
     }
     .btn {
       font-size: 1.2rem;
-      color: $white;
+      color: $orange;
       border: none;
-      background: $gradient;
+      border: 2px solid $orange;
+      transition: all .5s;
       &:hover {
         color: $white;
-        transform: scale(1.05);
+        background: $gradient;
+        // transform: scale(1.05);
       }
     }
   }
