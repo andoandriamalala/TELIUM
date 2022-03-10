@@ -169,7 +169,7 @@ header {
     &::after {
       content: '';
       height: 4px;
-      width: 5rem;
+      width: 3.5rem;
       display: block;
       background: $gradient;
     }
@@ -506,6 +506,20 @@ section {
   }
 }
 
+#image-slider {
+  .splide__arrows {
+    .splide__arrow--prev {
+      left: -4em !important;
+    }
+    .splide__arrow--next {
+      right: -4em !important;
+    }
+  }
+  .splide__pagination {
+    bottom: -2em;
+  }
+}
+
 .splide__pagination__page.is-active {
   background: $orange;
 }
@@ -612,4 +626,8 @@ h1#text {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.techno_content {
+  margin-top: 85px;
 }
