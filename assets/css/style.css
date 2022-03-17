@@ -314,6 +314,10 @@ section .container {
   padding: 2rem 0;
 }
 
+section .container p {
+  text-align: justify;
+}
+
 #checklist, #web_x5F_link {
   -webkit-animation-name: shake;
           animation-name: shake;
